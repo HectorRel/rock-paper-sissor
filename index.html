@@ -5,10 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Sissor</title>
-</head>
+    <title>Rock Paper Scissors</title>
+    <style>
+        .game-container{
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 150px;
+            align-items:center;
+        }
+        
+        .score-container{
+            display: flex;
+            gap: 100px;
+        }
 
+        .player-container{
+            display: flex;
+            gap: 5px;
+        }
+        .computer-container{
+            display: flex;
+            gap:5px;
+        }
+
+    </style>
+</head>
 <body>
+    <div class="game-container">
+
+         <div class="score-container">
+
+            <div class="player-container">
+                <div>Player Score:</div>
+                <div class="player-score">0</div>
+            </div>
+
+            <div class="computer-container">
+                <div>Computer Score:</div>
+                <div class="computer-score">0</div>
+
+            </div>
+            
+         </div>
+
+         <div class="result-container"></div>
+
+         <div class="btn-container">
+
+            <button class="btn-rock">Rock</button>
+            <button class="btn-paper">Paper</button>
+            <button class="btn-scissors">Scissors</button>
+
+         </div>
+
+
+    </div>
+    
 
     <script src="script.js"></script>
 </body>
